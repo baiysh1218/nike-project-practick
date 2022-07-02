@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 .container {
   max-width: 1332px;
@@ -22,7 +23,7 @@ body {
 }
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .nevbar-content {
   width: 40%;
@@ -78,4 +79,101 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.background-main {
+  background-color: #6c72cb;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.main-content-description-text {
+  color: #eeedf0;
+  font-size: 34px;
+}
+.main-content-sneakers-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-sneakers {
+  z-index: 3;
+}
+.main-nike-str {
+  position: absolute;
+  z-index: 2;
+}
+.img-back-vector {
+  margin-top: -20%;
+  width: 100vw;
+}
+.img-back-vector-1 {
+  margin-top: -20%;
+  z-index: 1;
+  width: 100vw;
+}
+.img-back-vector-2 {
+  margin-top: -20%;
+  z-index: 2;
+  width: 100vw;
+}
+.img-back-vector-3 {
+  margin-top: -15%;
+  z-index: 3;
+  width: 100vw;
+}
+.price-num {
+  position: absolute;
+  margin-right: 10%;
+  font-size: 56px;
+  color: white;
+}
+.price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+.price-arrow {
+  position: absolute;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+/* .footer-content-gift {
+} */
+.footer-content-h4 {
+  color: #eeedf0;
+  font-size: 18px;
+  margin: 7% 0;
+}
+.footer-content-p {
+  color: #cb69c1;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  margin: 7% 0;
+}
+.footer-img-end-1 {
+  width: 100vw;
+  z-index: 1;
+  margin-top: -25%;
+}
+.footer-img-end-2 {
+  width: 100vw;
+}
+.footer-img-end-3 {
+  width: 100vw;
+  z-index: 2;
+  margin-top: -30%;
+}
+.footer-img-end-4 {
+  width: 100vw;
+  z-index: 3;
+  margin-top: -30%;
+}
+.footer-img-end-5 {
+  width: 100vw;
+  z-index: 3;
+  margin-top: -30%;
 }
