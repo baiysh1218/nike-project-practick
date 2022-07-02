@@ -6,6 +6,7 @@ import Nike from "../../img/Nike-n.png";
 import LINE from "../../img/line.png";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
+import Section from "../Section/Section";
 
 const Intro = () => {
   return (
@@ -31,6 +32,7 @@ const Intro = () => {
         </div>
       </div>
       <Main />
+      <Section />
       <Footer />
     </>
   );

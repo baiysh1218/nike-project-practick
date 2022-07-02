@@ -100,7 +100,7 @@ body {
 }
 .main-nike-str {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
 }
 .img-back-vector {
   margin-top: -20%;
@@ -176,4 +176,7 @@ body {
   width: 100vw;
   z-index: 3;
   margin-top: -30%;
+}
+.section-line-top {
+  margin-top: 10%;
 }
