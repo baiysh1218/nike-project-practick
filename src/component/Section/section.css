@@ -1,0 +1,51 @@
+.section-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+}
+.section-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  width: 420px;
+  height: 420px;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 90, 205),
+    rgb(238, 130, 238)
+  );
+  border-radius: 46px;
+}
+
+.section-card p {
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+  padding: 20px 40px;
+}
+.section-circles {
+  width: 90px;
+  display: flex;
+  margin-top: 56px;
+  margin-bottom: 114px;
+}
+.section-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #cb69c1;
+}
+
+.section-circle:first-child {
+  background-color: #6c72cb;
+}
+
+.section-line {
+  width: 150px;
+  height: 10px;
+  background-color: #cb69c1;
+  border-radius: 25px;
+}
