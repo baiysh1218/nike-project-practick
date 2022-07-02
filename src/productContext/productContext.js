@@ -1,12 +1,11 @@
 import React from "react";
-import axios from "axios";
 
 export const productsContext = React.createContext();
 
-const productsContextProvaider = ({}) => {
+const ProductsContextProvaider = ({ children }) => {
   return (
     <productsContext.Provider value={{}}>{children}</productsContext.Provider>
   );
 };
 
-export default productsContextProvaider;
+export default ProductsContextProvaider;
