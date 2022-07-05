@@ -4,7 +4,8 @@ import Revolution from "../../img/revolution.svg";
 import Revolution1 from "../../img/revolution1.svg";
 import Revolution2 from "../../img/revolution2.svg";
 
-const Section = () => {
+const Section = ({ products }) => {
+  console.log(products);
   return (
     <div className="container">
       <div className="section-intro">
@@ -12,18 +13,18 @@ const Section = () => {
         <div className="section-cards">
           <div className="section-card">
             <img src={Revolution2} />
-            <p>Nike Air Zoom Pegasus 38</p>
-            <p>380$</p>
+            <p className="section-p">Nike Air Zoom Pegasus 38</p>
+            <p id="section-price">380$</p>
           </div>
           <div className="section-card">
             <img src={Revolution1} />
-            <p>Nike ZoomX Invincible Run Flyknit</p>
-            <p>180$</p>
+            <p className="section-p">Nike ZoomX Invincible Run Flyknit</p>
+            <p id="section-price">180$</p>
           </div>
           <div className="section-card">
             <img src={Revolution2} />
-            <p>Nike Revolution 6 Zoom Pegasus</p>
-            <p> 220$</p>
+            <p className="section-p">Nike Revolution 6 Zoom Pegasus</p>
+            <p id="section-price"> 220$</p>
           </div>
         </div>
         <div className="section-circles">

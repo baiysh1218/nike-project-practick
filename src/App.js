@@ -6,17 +6,20 @@ import { BrowserRouter } from "react-router-dom";
 import CartContextProvaider from "./productContext/cartContext";
 import ProductsContextProvaider from "./productContext/productContext";
 import Routing from "./Routing";
+import UserContextProvaider from "./productContext/userContext";
 
 const App = () => {
   return (
-    <CartContextProvaider>
-      <ProductsContextProvaider>
-        <BrowserRouter>
-          <Header />
-          <Routing />
-        </BrowserRouter>
-      </ProductsContextProvaider>
-    </CartContextProvaider>
+    <UserContextProvaider>
+      <CartContextProvaider>
+        <ProductsContextProvaider>
+          <BrowserRouter>
+            <Header />
+            <Routing />
+          </BrowserRouter>
+        </ProductsContextProvaider>
+      </CartContextProvaider>
+    </UserContextProvaider>
   );
 };
 

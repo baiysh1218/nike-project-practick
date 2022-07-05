@@ -1,11 +1,34 @@
 {
   "product": [
     {
-      "name": "vsujdf",
-      "price": "shygduhf",
-      "description": "sdbjfns",
-      "image": "dfhikmds",
+      "name": "bvh",
+      "price": " b n",
+      "description": "nj",
+      "gender": "bvb",
+      "image": "bhbjhnh",
+      "delivery": " ghvh",
+      "functional": "vhjhg",
       "id": 1
+    },
+    {
+      "name": "dfvkdflv",
+      "price": "djnvdkfv12345",
+      "description": "jkvnkdflvd",
+      "gender": "dfkvjnkfmlvf",
+      "image": " djbvnijdoklvd",
+      "delivery": "jkdnfvldfv",
+      "functional": "dnkfvmd,fv",
+      "id": 2
+    },
+    {
+      "name": "dnvmldfb",
+      "price": "12345678",
+      "description": "dfbhjnf",
+      "gender": "nfgkbmflgb",
+      "image": "https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/w_489,c_limit/ed175021-f204-4172-92be-a6da93be11cc/chaussure-air-jordan-1-low-og.png",
+      "delivery": "nfjbkmflb",
+      "functional": "fnbkmflgb,f",
+      "id": 3
     }
   ]
 }

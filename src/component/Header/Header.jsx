@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../img/logo.png";
 
@@ -8,6 +8,7 @@ import { Container, IconButton } from "@mui/material";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
   return (
     <div className="container">
       <div className="navbar">
@@ -20,18 +21,20 @@ const Navbar = () => {
           />
         </div>
         <div className="nevbar-content">
-          <p className="navbar-content-text">New Releases</p>
-          <p className="navbar-content-text">Men</p>
-          <p className="navbar-content-text">Women</p>
-          <p className="navbar-content-text">Kids</p>
-          <p className="navbar-content-text">Sale</p>
-          <p className="navbar-content-text">Gifts</p>
+          <p
+            onClick={() => navigate("/all-product")}
+            className="navbar-content-text">
+            All Product
+          </p>
+          <p className="navbar-content-text" onClick={() => navigate("/admin")}>
+            Add Product
+          </p>
         </div>
         <div className="search">
           <IconButton>
             <SearchIcon className="navbar-search-icon" />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={() => navigate("/log-in")}>
             <PersonIcon className="navbar-search-icon" />
           </IconButton>
         </div>
