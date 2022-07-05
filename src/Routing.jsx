@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Admin from "./component/Admin/Admin";
 import AllProduct from "./component/AllProduct/AllProduct";
+import Details from "./component/Details/Details";
+import Edit from "./component/Edit/Edit";
 import Header from "./component/Header/Header";
 import Intro from "./component/Intro/Intro";
 import LogIn from "./component/LogIn/LogIn";
@@ -16,6 +18,8 @@ const Routing = () => {
       <Route path="/all-product" element={<AllProduct />} />
       <Route path="/log-in" element={<LogIn />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/edit/:id" element={<Edit />} />
+      <Route path="/details/:id" element={<Details />} />
     </Routes>
   );
 };

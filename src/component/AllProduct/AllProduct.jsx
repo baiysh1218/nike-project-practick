@@ -8,7 +8,7 @@ const AllProduct = () => {
   useEffect(() => {
     getProducts();
   }, []);
-  console.log(products);
+  // console.log(products);
   return (
     <div className="container">
       <div className="all-poduct-wrap">

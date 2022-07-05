@@ -5,7 +5,7 @@ import Revolution1 from "../../img/revolution1.svg";
 import Revolution2 from "../../img/revolution2.svg";
 
 const Section = ({ products }) => {
-  console.log(products);
+  // console.log(products);
   return (
     <div className="container">
       <div className="section-intro">
