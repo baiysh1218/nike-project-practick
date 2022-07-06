@@ -8,7 +8,9 @@ const Details = () => {
   useEffect(() => {
     editProduct(id);
   }, []);
+
   return newProducts ? (
+
     <div className="container">
       <div className="deteils-block">
         <div>

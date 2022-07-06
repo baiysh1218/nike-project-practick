@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Admin from "./component/Admin/Admin";
 import AllProduct from "./component/AllProduct/AllProduct";
+
 import Details from "./component/Details/Details";
 import DeteilsSection from "./component/DeteilSection/DeteilsSection";
 import Edit from "./component/Edit/Edit";
