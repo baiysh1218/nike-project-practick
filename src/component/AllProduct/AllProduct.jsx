@@ -16,9 +16,6 @@ const AllProduct = () => {
         {products.map(item => (
           <Cart key={item.id} item={item} />
         ))}
-        {products.map(elem => (
-          <Section key={elem.id} elem={elem} />
-        ))}
       </div>
     </div>
   );

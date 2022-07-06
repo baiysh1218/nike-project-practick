@@ -335,3 +335,10 @@ body {
 .deteils-block-img-center {
   margin-bottom: 10%;
 }
+.deteils-block-img-center {
+  display: flex;
+  flex-direction: row;
+}
+.main-img {
+  max-width: 800px;
+}

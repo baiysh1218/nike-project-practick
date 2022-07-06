@@ -6,7 +6,6 @@ export const productsContext = React.createContext();
 
 const INIT_STATE = {
   products: [],
-  oneProduct: null,
   pages: 0,
   newProducts: null,
 };
@@ -18,8 +17,7 @@ function reducer(state = INIT_STATE, action) {
         products: action.payload.data,
         pages: Math.ceil(action.payload.headers["x-total-count"] / 2),
       };
-    case "GET_ONE":
-      return { ...state, oneProduct: action.payload };
+
     case "EDIT_PRODUCT":
       return { ...state, newProducts: action.payload };
     default:
