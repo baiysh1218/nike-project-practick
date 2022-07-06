@@ -8,7 +8,7 @@ const Details = () => {
   useEffect(() => {
     editProduct(id);
   }, []);
-  // console.log(newProducts);
+  // console.log(id);
   return (
     <div className="container">
       {products.map(item => (
