@@ -7,8 +7,10 @@ import Vector3 from "../../img/Vector-3.png";
 import Vector from "../../img/Vector.png";
 import Arrow from "../../img/Group 3.png";
 import { IconButton } from "@mui/material";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <div className="background-main">
       <div className="container">
@@ -23,7 +25,7 @@ const Main = () => {
         </div>
         <div className="price">
           <h3 className="price-num">250$</h3>
-          <IconButton>
+          <IconButton onClick={() => navigate("/deteils-section")}>
             <img className="price-arrow" src={Arrow} alt="" />
           </IconButton>
         </div>

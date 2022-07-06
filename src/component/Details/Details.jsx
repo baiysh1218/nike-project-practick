@@ -8,29 +8,28 @@ const Details = () => {
   useEffect(() => {
     editProduct(id);
   }, []);
-  // console.log(newProducts);
-  return (
+  return newProducts ? (
     <div className="container">
-      {products.map(item => (
-        <div className="deteils-block" key={item.id} item={item}>
-          <div>
-            <div className="deteils-content-block">
-              <h3 className="deteils-content-h3">{item.name}</h3>
-              <h6 className="deteils-content-h6">{item.price}</h6>
-            </div>
-            <div className="deteils-content-block-description">
-              <p className="deteils-p">{item.description}</p>
-              <p className="deteils-p">{item.gender}</p>
-              <p className="deteils-p">{item.delivery}</p>
-            </div>
+      <div className="deteils-block">
+        <div>
+          <div className="deteils-content-block">
+            <h3 className="deteils-content-h3">{newProducts.name}</h3>
+            <h6 className="deteils-content-h6">{newProducts.price}</h6>
           </div>
-          <div className="deteils-block-img-center">
-            <img src={item.image} alt="" />
-            <img src={item.imageTwo} alt="" />
+          <div className="deteils-content-block-description">
+            <p className="deteils-p">{newProducts.description}</p>
+            <p className="deteils-p">{newProducts.gender}</p>
+            <p className="deteils-p">{newProducts.delivery}</p>
           </div>
         </div>
-      ))}
+        <div className="deteils-block-img-center">
+          <img src={newProducts.image} alt="" />
+          <img src={newProducts.imageTwo} alt="" />
+        </div>
+      </div>
     </div>
+  ) : (
+    <h1>Loading...</h1>
   );
 };
 

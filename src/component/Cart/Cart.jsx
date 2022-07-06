@@ -31,7 +31,7 @@ const Cart = ({ item }) => {
         <button
           onClick={() => navigate(`/details/${item.id}`)}
           className="btn-edit-cart">
-          Deteils
+          Detфils
         </button>
       </div>
     </div>
