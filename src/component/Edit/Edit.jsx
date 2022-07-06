@@ -35,25 +35,30 @@ const Edit = () => {
     navigate("/all-product");
   }
   return (
-    <div>
-      <TextField
-        value={name}
-        onChange={e => setName(e.target.value)}
-        variant="outlined"
-      />
-      <TextField
-        value={price}
-        onChange={e => setPrice(e.target.value)}
-        variant="outlined"
-      />
-      <TextField
-        value={gender}
-        onChange={e => setGender(e.target.value)}
-        variant="outlined"
-      />
-      <Button variant="contained" onClick={handleSave}>
-        Save
-      </Button>
+    <div className="container">
+      <div className="edit-block">
+        <input
+          className="edit-inp"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          variant="outlined"
+        />
+        <input
+          className="edit-inp"
+          value={price}
+          onChange={e => setPrice(e.target.value)}
+          variant="outlined"
+        />
+        <input
+          className="edit-inp"
+          value={gender}
+          onChange={e => setGender(e.target.value)}
+          variant="outlined"
+        />
+        <button className="edit-btn" variant="contained" onClick={handleSave}>
+          Save
+        </button>
+      </div>
     </div>
   );
 };

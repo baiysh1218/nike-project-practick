@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { productsContext } from "../../productContext/productContext";
 import Cart from "../Cart/Cart";
+import Details from "../Details/Details";
 import Section from "../Section/Section";
 
 const AllProduct = () => {
@@ -15,8 +16,8 @@ const AllProduct = () => {
         {products.map(item => (
           <Cart key={item.id} item={item} />
         ))}
-        {products.map(item => (
-          <Section key={item.id} item={item} />
+        {products.map(elem => (
+          <Section key={elem.id} elem={elem} />
         ))}
       </div>
     </div>

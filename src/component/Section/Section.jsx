@@ -4,7 +4,7 @@ import Revolution from "../../img/revolution.svg";
 import Revolution1 from "../../img/revolution1.svg";
 import Revolution2 from "../../img/revolution2.svg";
 
-const Section = ({ products }) => {
+const Section = ({ elem }) => {
   // console.log(products);
   return (
     <div className="container">

@@ -11,7 +11,7 @@ const Admin = () => {
   const [image, setImage] = useState("");
   const [gender, setGender] = useState("");
   const [delivery, setDelivery] = useState("");
-  const [functional, setFunctional] = useState("");
+  const [imageTwo, setImageTwo] = useState("");
 
   function handleSave() {
     let newProduct = {
@@ -20,8 +20,8 @@ const Admin = () => {
       description,
       gender,
       image,
+      imageTwo,
       delivery,
-      functional,
     };
     if (!name.trim() || !price.trim() || !description.trim() || !image) {
       alert("заполните поля!");
@@ -64,13 +64,7 @@ const Admin = () => {
           type="text"
           placeholder="gender"
         />
-        <input
-          className="inp-admin"
-          value={functional}
-          onChange={e => setFunctional(e.target.value)}
-          type="text"
-          placeholder="functional"
-        />
+
         <input
           className="inp-admin"
           value={delivery}
@@ -84,6 +78,13 @@ const Admin = () => {
           onChange={e => setImage(e.target.value)}
           type="text"
           placeholder="img"
+        />
+        <input
+          className="inp-admin"
+          value={imageTwo}
+          onChange={e => setImageTwo(e.target.value)}
+          type="text"
+          placeholder="imgTwo"
         />
         <button className="btn-admin" onClick={() => handleSave()}>
           save
