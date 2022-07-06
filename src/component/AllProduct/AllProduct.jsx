@@ -69,6 +69,7 @@ const AllProduct = () => {
           page={currentPage}
           count={pages}
         />
+
       </div>
     </>
   );

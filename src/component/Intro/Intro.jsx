@@ -32,7 +32,6 @@ const Intro = () => {
         </div>
       </div>
       <Main />
-      <Section />
       <Footer />
     </>
   );

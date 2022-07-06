@@ -4,6 +4,7 @@ import Admin from "./component/Admin/Admin";
 import AllProduct from "./component/AllProduct/AllProduct";
 
 import Details from "./component/Details/Details";
+import DeteilsSection from "./component/DeteilSection/DeteilsSection";
 import Edit from "./component/Edit/Edit";
 import Header from "./component/Header/Header";
 import Intro from "./component/Intro/Intro";
@@ -21,6 +22,7 @@ const Routing = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/edit/:id" element={<Edit />} />
       <Route path="/details/:id" element={<Details />} />
+      <Route path="/deteils-section" element={<DeteilsSection />} />
     </Routes>
   );
 };
