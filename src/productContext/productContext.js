@@ -15,7 +15,7 @@ function reducer(state = INIT_STATE, action) {
       return {
         ...state,
         products: action.payload.data,
-        pages: Math.ceil(action.payload.headers["x-total-count"] / 2),
+        pages: Math.ceil(action.payload.headers["x-total-count"] / 6),
       };
 
     case "EDIT_PRODUCT":
@@ -28,6 +28,7 @@ const API = "http://localhost:8002/product";
 const ProductsContextProvaider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
   let params = useParams();
+
   async function createProduct(newProduct) {
     await axios.post(API, newProduct);
     getProducts();

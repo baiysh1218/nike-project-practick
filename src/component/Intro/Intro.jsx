@@ -19,7 +19,7 @@ const Intro = () => {
           <div className="intro-img">
             <img className="intro-img-back" src={NIKE} />
             <img className="intro-img-back-group" src={GROUP} />
-            <img src={Nike} />
+            <img className="intro-img-nike-sneacers" src={Nike} />
           </div>
           <div className="intro-content">
             <h5 className="intro-content-text">
@@ -27,7 +27,7 @@ const Intro = () => {
             </h5>
           </div>
           <div className="intro-line">
-            <img src={LINE} alt="line" />
+            <img src={LINE} alt="line" className="intro-line-bottom" />
           </div>
         </div>
       </div>

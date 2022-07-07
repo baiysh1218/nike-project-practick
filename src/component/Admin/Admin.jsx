@@ -6,7 +6,7 @@ const Admin = () => {
   const { createProduct } = useContext(productsContext);
   const navigate = useNavigate();
   const [name, setName] = useState("");
-  const [price, setPrice] = useState("");
+  const [price, setPrice] = useState(1);
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [gender, setGender] = useState("");
@@ -16,7 +16,7 @@ const Admin = () => {
   function handleSave() {
     let newProduct = {
       name,
-      price,
+      price: +price,
       description,
       gender,
       image,
@@ -47,7 +47,7 @@ const Admin = () => {
           className="inp-admin"
           value={price}
           onChange={e => setPrice(e.target.value)}
-          type="text"
+          type="number"
           placeholder="price"
         />
         <input
@@ -86,6 +86,7 @@ const Admin = () => {
           type="text"
           placeholder="imgTwo"
         />
+
         <button className="btn-admin" onClick={() => handleSave()}>
           save
         </button>
