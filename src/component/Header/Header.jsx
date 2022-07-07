@@ -6,6 +6,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
 import { Container, IconButton } from "@mui/material";
 
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -32,7 +34,10 @@ const Navbar = () => {
         </div>
         <div className="search">
           <IconButton>
-            <SearchIcon className="navbar-search-icon" />
+            <ShoppingCartIcon
+              className="navbar-search-icon"
+              onClick={() => navigate("/cart")}
+            />
           </IconButton>
           <IconButton onClick={() => navigate("/log-in")}>
             <PersonIcon className="navbar-search-icon" />

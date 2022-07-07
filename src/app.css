@@ -340,5 +340,198 @@ body {
   flex-direction: row;
 }
 .main-img {
-  max-width: 800px;
+  max-width: 50%;
+}
+.all-product-input0-search {
+  padding: 1%;
+  width: 20%;
+  border-radius: 8px;
+  border: none;
+  background-color: #eeedf0;
+  margin: 1% 0;
+}
+.all-product-pagination {
+  color: white;
+  font-size: 20px;
+  margin: 2% 0;
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 90, 205),
+    rgb(238, 130, 238)
+  );
+  padding: 1%;
+  border-radius: 20px;
+  width: 85%;
+}
+.pagination-center {
+  display: flex;
+  justify-content: center;
+}
+.all-product-input0-search {
+  margin-left: 3%;
+}
+.search-slider-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.slider-block {
+  width: 70%;
+}
+.total-price {
+  color: white;
+  margin-top: 30%;
+}
+
+.img-details {
+  width: 50%;
+}
+.img-cart {
+  margin-top: -10%;
+}
+.btn-by {
+  width: 20%;
+  margin: 3% 0;
+}
+.profile-content-block {
+  margin-bottom: 20%;
+}
+@media all and (max-width: 1350px) {
+  .main-nike-str {
+    width: 80%;
+  }
+  .price {
+    display: flex;
+    margin-right: 10%;
+  }
+}
+@media all and (max-width: 1000px) {
+  .intro-component-content {
+    font-size: 60px;
+  }
+  .main-content-description-text {
+    margin-left: 5%;
+  }
+  .footer-content-h4 {
+    font-size: 12px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .intro-img-back {
+    width: 80%;
+  }
+  .intro-img-back-group {
+    width: 80%;
+  }
+  .intro-img-nike-sneacers {
+    width: 80%;
+  }
+  .navbar {
+    width: 80%;
+  }
+  .navbar-logo {
+    width: 15%;
+  }
+  .logo-img-nike {
+    width: 90%;
+  }
+  .main-sneakers {
+    width: 80%;
+  }
+}
+@media all and (max-width: 780px) {
+  .intro-component-content {
+    font-size: 40px;
+  }
+  .navbar-content-text {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 680px) {
+  .intro-component {
+    justify-content: center;
+  }
+  .intro-component-content {
+    font-size: 30px;
+  }
+  .intro-content-text {
+    font-size: 20px;
+  }
+  .intro-line {
+    justify-content: center;
+  }
+  .intro-line-bottom {
+    width: 10%;
+  }
+  .main-content-description-text {
+    font-size: 25px;
+  }
+  .price-num {
+    font-size: 35px;
+  }
+  .price-arrow {
+    width: 450%;
+  }
+  .navbar-content-text {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 550px) {
+  .navbar-content-text {
+    font-size: 10px;
+  }
+  .logo-img-nike {
+    width: 70%;
+  }
+  .intro-component-content {
+    font-size: 20px;
+    margin-top: 5%;
+  }
+  .footer-content-h4 {
+    font-size: 8px;
+  }
+  .footer-content-p {
+    font-size: 9px;
+  }
+  .price-num {
+    font-size: 20px;
+  }
+  .price-arrow {
+    width: 250%;
+    margin-right: 220%;
+  }
+  .footer-img-end-5 {
+    margin-bottom: 2%;
+  }
+  .price-num {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 440px) {
+  .intro-content-text {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 375px) {
+  .navbar-content-text {
+    font-size: 8px;
+  }
+  .intro-content-text {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 375px) {
+  .price-num {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 320px) {
+  .main-content-description-text {
+    font-size: 20px;
+  }
+  .footer-img-end-5 {
+    margin-bottom: 5%;
+  }
 }

@@ -24,7 +24,7 @@ const AllProduct = () => {
     setSearchParams({
       q: search,
       _page: currentPage,
-      _limit: 2,
+      _limit: 6,
       price_gte: price[0],
       price_lte: price[1],
     });
@@ -33,43 +33,50 @@ const AllProduct = () => {
   useEffect(() => {
     getProducts();
   }, [searchParams]);
-  // console.log(products);
+  console.log(products);
   return (
     <>
       <div className="container">
-        <Slider
-          getAriaLabel={() => "Temperature range"}
-          value={price}
-          onChange={(e, value) => {
-            console.log(value);
-            setPrice(value);
-          }}
-          min={0}
-          max={100000}
-          step={1000}
-          valueLabelDisplay="auto"
-          // getAriaValueText={valuetext}
-        />
-        <TextField
-          onChange={e => setSearch(e.target.value)}
-          style={{ margin: "20px" }}
-          variant="outlined"
-          label="search"
-        />
+        <div className="search-slider-block">
+          <input
+            className="all-product-input0-search"
+            onChange={e => setSearch(e.target.value)}
+            placeholder="search"
+          />
+          <div className="slider-block">
+            <Slider
+              color="secondary"
+              className="slider-all-product"
+              getAriaLabel={() => "Temperature range"}
+              value={price}
+              onChange={(e, value) => {
+                console.log(value);
+                setPrice(value);
+              }}
+              min={1}
+              max={100000}
+              step={1000}
+              valueLabelDisplay="auto"
+              // getAriaValueText={valuetext}
+            />
+          </div>
+        </div>
         <div className="all-poduct-wrap">
           {products.map(item => (
             <Cart key={item.id} item={item} />
           ))}
         </div>
-        <Pagination
-          onChange={(event, page) => {
-            // console.log(page);
-            setCurrentPage(page);
-          }}
-          page={currentPage}
-          count={pages}
-        />
-
+        <div className="pagination-center">
+          <Pagination
+            onChange={(event, page) => {
+              // console.log(page);
+              setCurrentPage(page);
+            }}
+            className="all-product-pagination"
+            page={currentPage}
+            count={pages}
+          />
+        </div>
       </div>
     </>
   );

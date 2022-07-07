@@ -1,13 +1,18 @@
-import React from "react";
+import { IconButton } from "@mui/material";
+import React, { useState } from "react";
 import { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { productsContext } from "../../productContext/productContext";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { cartContext } from "../../productContext/cartContext";
 
 const Cart = ({ item }) => {
   const { deleteProduct } = useContext(productsContext);
   const navigate = useNavigate();
   const { id } = useParams();
   // console.log(item.id);
+  const { addToCart, checkProductInCart } = useContext(cartContext);
+  const [productCart, setProductState] = useState(checkProductInCart(item.id));
 
   return (
     <div className="section-card">
@@ -31,8 +36,17 @@ const Cart = ({ item }) => {
         <button
           onClick={() => navigate(`/details/${item.id}`)}
           className="btn-edit-cart">
-          Detфils
+          Details
         </button>
+        <IconButton
+          onClick={() => {
+            addToCart(item);
+            setProductState(checkProductInCart(item.id));
+          }}>
+          <AddShoppingCartIcon
+            color={setProductState ? "secondary" : "primary"}
+          />
+        </IconButton>
       </div>
     </div>
   );

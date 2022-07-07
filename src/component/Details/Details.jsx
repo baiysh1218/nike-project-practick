@@ -10,7 +10,6 @@ const Details = () => {
   }, []);
 
   return newProducts ? (
-
     <div className="container">
       <div className="deteils-block">
         <div>
@@ -25,8 +24,8 @@ const Details = () => {
           </div>
         </div>
         <div className="deteils-block-img-center">
-          <img src={newProducts.image} alt="" />
-          <img src={newProducts.imageTwo} alt="" />
+          <img className="img-details" src={newProducts.image} alt="" />
+          <img className="img-details" src={newProducts.imageTwo} alt="" />
         </div>
       </div>
     </div>

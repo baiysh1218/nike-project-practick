@@ -1,7 +1,9 @@
+import { CreditCard } from "@mui/icons-material";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Admin from "./component/Admin/Admin";
 import AllProduct from "./component/AllProduct/AllProduct";
+import Buscet from "./component/Buscet/Buscet";
 
 import Details from "./component/Details/Details";
 import DeteilsSection from "./component/DeteilSection/DeteilsSection";
@@ -23,6 +25,7 @@ const Routing = () => {
       <Route path="/edit/:id" element={<Edit />} />
       <Route path="/details/:id" element={<Details />} />
       <Route path="/deteils-section" element={<DeteilsSection />} />
+      <Route path="/cart" element={<Buscet />} />
     </Routes>
   );
 };
