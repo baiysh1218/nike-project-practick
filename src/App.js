@@ -7,6 +7,7 @@ import CartContextProvaider from "./productContext/cartContext";
 import ProductsContextProvaider from "./productContext/productContext";
 import Routing from "./Routing";
 import UserContextProvaider from "./productContext/userContext";
+import Footer from "./component/Footer/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <BrowserRouter>
             <Header />
             <Routing />
+            <Footer />
           </BrowserRouter>
         </ProductsContextProvaider>
       </CartContextProvaider>

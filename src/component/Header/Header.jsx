@@ -4,12 +4,18 @@ import Logo from "../../img/logo.png";
 
 import SearchIcon from "@mui/icons-material/Search";
 import PersonIcon from "@mui/icons-material/Person";
-import { Container, IconButton } from "@mui/material";
+import { Badge, Container, IconButton } from "@mui/material";
 
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { cartContext } from "../../productContext/cartContext";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+  const { getCart, count } = React.useContext(cartContext);
+  React.useEffect(() => {
+    getCart();
+  }, []);
 
   return (
     <div className="container">
@@ -34,10 +40,12 @@ const Navbar = () => {
         </div>
         <div className="search">
           <IconButton>
-            <ShoppingCartIcon
-              className="navbar-search-icon"
-              onClick={() => navigate("/cart")}
-            />
+            <Badge badgeContent={count} color="error">
+              <ShoppingCartIcon
+                className="navbar-search-icon"
+                onClick={() => navigate("/cart")}
+              />
+            </Badge>
           </IconButton>
           <IconButton onClick={() => navigate("/log-in")}>
             <PersonIcon className="navbar-search-icon" />

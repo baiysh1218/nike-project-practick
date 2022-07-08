@@ -397,6 +397,41 @@ body {
 .profile-content-block {
   margin-bottom: 20%;
 }
+.credit-card-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.credit-card-inp-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5%;
+}
+.credit-card-inp {
+  padding: 1%;
+  border-radius: 8px;
+  border: none;
+  background-color: #eeedf0;
+  margin: 1% 0;
+  width: 30%;
+  margin-left: 35%;
+}
+.Buscet-block {
+  border-radius: 30px;
+}
+.table-buscet {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 90, 205),
+    rgb(238, 130, 238)
+  );
+}
+.btn-ordering {
+  margin-left: 35%;
+  width: 30%;
+}
+
 @media all and (max-width: 1350px) {
   .main-nike-str {
     width: 80%;
@@ -406,6 +441,7 @@ body {
     margin-right: 10%;
   }
 }
+
 @media all and (max-width: 1000px) {
   .intro-component-content {
     font-size: 60px;
@@ -534,4 +570,85 @@ body {
   .footer-img-end-5 {
     margin-bottom: 5%;
   }
+}
+@media all and (max-width: 1250px) {
+  .btn-edit-cart {
+    margin-top: 30%;
+  }
+  .btn-cart {
+    margin-top: 250%;
+  }
+}
+@media all and (max-width: 1000px) {
+  .cart-block {
+    flex-direction: column;
+  }
+  .btn-cart {
+    margin-top: -10%;
+  }
+  .section-card {
+    height: 90%;
+  }
+  .btn-edit-cart {
+    margin: 0;
+  }
+}
+@media all and (max-width: 920px) {
+  .cart-item {
+    display: flex;
+    font-size: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 850px) {
+  .container {
+    max-width: 700px;
+  }
+  .all-poduct-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media all and (max-width: 450px) {
+  .section-card {
+    height: 30%;
+  }
+  .container {
+    max-width: 324px;
+  }
+  .cart-img-width {
+    width: 150px;
+    padding: 8%;
+  }
+}
+@media all and (max-width: 450px) {
+  .profile-content-block {
+    width: 220px;
+  }
+  .profile-h3 {
+    font-size: 20px;
+  }
+  .profile-content {
+    font-size: 16px;
+  }
+  .profile-p {
+    font-size: 10px;
+  }
+}
+@media all and (max-width: 1375px) {
+  .profile-content-block {
+    width: 720px;
+  }
+}
+@media all and (max-width: 440px) {
+  .btn-edit-cart {
+    margin-top: 40%;
+  }
+  .btn-cart {
+    margin-top: 40%;
+  }
+}
+.footer-background {
+  margin-top: 20%;
 }

@@ -9,7 +9,6 @@ const Admin = () => {
   const [price, setPrice] = useState(1);
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
-  const [gender, setGender] = useState("");
   const [delivery, setDelivery] = useState("");
   const [imageTwo, setImageTwo] = useState("");
 
@@ -18,7 +17,6 @@ const Admin = () => {
       name,
       price: +price,
       description,
-      gender,
       image,
       imageTwo,
       delivery,
@@ -56,13 +54,6 @@ const Admin = () => {
           onChange={e => setDescription(e.target.value)}
           type="text"
           placeholder="description"
-        />
-        <input
-          className="inp-admin"
-          value={gender}
-          onChange={e => setGender(e.target.value)}
-          type="text"
-          placeholder="gender"
         />
 
         <input

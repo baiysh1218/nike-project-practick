@@ -12,7 +12,12 @@ const Cart = ({ item }) => {
   const { id } = useParams();
   // console.log(item.id);
   const { addToCart, checkProductInCart } = useContext(cartContext);
-  const [productCart, setProductState] = useState(checkProductInCart(item.id));
+  const [productCart, setProductCart] = useState(checkProductInCart(item.id));
+
+  const { getCart, count } = React.useContext(cartContext);
+  React.useEffect(() => {
+    getCart();
+  }, []);
 
   return (
     <div className="section-card">
@@ -20,8 +25,8 @@ const Cart = ({ item }) => {
         <img className="cart-img-width" src={item.image} />
       </div>
       <p className="cart-item">{item.name}</p>
-      <p className="cart-item">{item.price}</p>
-      <p className="cart-item cart-p">{item.gender}</p>
+      <p className="cart-item">{item.price}$</p>
+
       <div className="cart-block">
         <button
           onClick={() => navigate(`/edit/${item.id}`)}
@@ -39,12 +44,14 @@ const Cart = ({ item }) => {
           Details
         </button>
         <IconButton
+          className="btn-cart"
           onClick={() => {
             addToCart(item);
-            setProductState(checkProductInCart(item.id));
+            setProductCart(checkProductInCart(item.id));
           }}>
           <AddShoppingCartIcon
-            color={setProductState ? "secondary" : "primary"}
+            className="btn-cart"
+            color={productCart ? "secondary" : "primary"}
           />
         </IconButton>
       </div>
