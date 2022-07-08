@@ -67,6 +67,13 @@ export default class PaymentForm extends React.Component {
               onChange={this.handleInputChange}
               onFocus={this.handleInputFocus}
             />
+            <button
+              onClick={() => {
+                alert("заказ оформлен!");
+              }}
+              className="btn-by btn-admin btn-ordering">
+              succses
+            </button>
           </div>
           ...
         </form>
