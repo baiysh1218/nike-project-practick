@@ -5,6 +5,8 @@ import Admin from "./component/Admin/Admin";
 import AllProduct from "./component/AllProduct/AllProduct";
 import Buscet from "./component/Buscet/Buscet";
 
+import Order from "./component/Order/Order";
+
 import Details from "./component/Details/Details";
 import DeteilsSection from "./component/DeteilSection/DeteilsSection";
 import Edit from "./component/Edit/Edit";
@@ -26,6 +28,7 @@ const Routing = () => {
       <Route path="/details/:id" element={<Details />} />
       <Route path="/deteils-section" element={<DeteilsSection />} />
       <Route path="/cart" element={<Buscet />} />
+      <Route path="/order" element={<Order />} />
     </Routes>
   );
 };

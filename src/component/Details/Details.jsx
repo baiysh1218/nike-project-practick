@@ -15,12 +15,11 @@ const Details = () => {
         <div>
           <div className="deteils-content-block">
             <h3 className="deteils-content-h3">{newProducts.name}</h3>
-            <h6 className="deteils-content-h6">{newProducts.price}</h6>
+            <h6 className="deteils-content-h6">{newProducts.price}$</h6>
           </div>
           <div className="deteils-content-block-description">
             <p className="deteils-p">{newProducts.description}</p>
-            <p className="deteils-p">{newProducts.gender}</p>
-            <p className="deteils-p">{newProducts.delivery}</p>
+            <p className="deteils-p">{newProducts.delivery}$</p>
           </div>
         </div>
         <div className="deteils-block-img-center">
