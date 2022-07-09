@@ -417,8 +417,10 @@ body {
   width: 30%;
   margin-left: 35%;
 }
-.Buscet-block {
+.buscet-block {
   border-radius: 30px;
+  width: 90%;
+  min-width: 320px;
 }
 .table-buscet {
   background-image: linear-gradient(
@@ -426,10 +428,22 @@ body {
     rgb(106, 90, 205),
     rgb(238, 130, 238)
   );
+  width: 70%;
+  min-width: 0%;
 }
 .btn-ordering {
   margin-left: 35%;
   width: 30%;
+}
+.cart-block-section {
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cart-img {
+  width: 15%;
+  margin-left: 10%;
 }
 
 @media all and (max-width: 1350px) {
@@ -451,6 +465,9 @@ body {
   }
   .footer-content-h4 {
     font-size: 12px;
+  }
+  .cart-block-section {
+    flex-wrap: wrap;
   }
 }
 
@@ -475,6 +492,9 @@ body {
   }
   .main-sneakers {
     width: 80%;
+  }
+  .cart-block-section {
+    flex-wrap: wrap;
   }
 }
 @media all and (max-width: 780px) {
@@ -640,6 +660,9 @@ body {
   .profile-content-block {
     width: 720px;
   }
+  .container {
+    width: 1270px;
+  }
 }
 @media all and (max-width: 440px) {
   .btn-edit-cart {
@@ -651,4 +674,88 @@ body {
 }
 .footer-background {
   margin-top: 20%;
+}
+@media all and (max-width: 1270px) {
+  .container {
+    width: 1100px;
+  }
+}
+@media all and (max-width: 1120px) {
+  .container {
+    width: 900px;
+  }
+}
+@media all and (max-width: 950px) {
+  .container {
+    width: 800px;
+  }
+}
+@media all and (max-width: 770px) {
+  .deteils-content-h3 {
+    font-size: 30px;
+  }
+  .deteils-content-h6 {
+    font-size: 16px;
+  }
+  .deteils-p {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 720px) {
+  .container {
+    width: 650px;
+  }
+}
+@media all and (max-width: 670px) {
+  .container {
+    width: 550px;
+  }
+}
+@media all and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+}
+@media all and (max-width: 520px) {
+  .container {
+    width: 420px;
+  }
+  .navbar {
+    margin-top: 10%;
+  }
+}
+@media all and (max-width: 450px) {
+  .deteils-content-h3 {
+    font-size: 18px;
+  }
+  .deteils-content-h6 {
+    font-size: 10px;
+  }
+  .deteils-p {
+    font-size: 9px;
+  }
+  .deteils-block {
+    margin-top: 20%;
+  }
+  .navbar {
+    margin-top: 10%;
+  }
+}
+@media all and (max-width: 340px) {
+  .container {
+    width: 250px;
+  }
+  .navbar {
+    margin-top: 10%;
+  }
+}
+@media all and (max-width: 700px) {
+  /* .cart-table-row {
+    display: flex;
+    flex-direction: column;
+  } */
+  .buscet-block {
+    width: 70%;
+    min-width: 320px;
+  }
 }

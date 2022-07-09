@@ -38,7 +38,6 @@ const Section = () => {
           </div>
           <div className="section-line"></div>
           <p></p>
-          <div className="aaaaa"></div>
         </div>
       ))}
     </div>

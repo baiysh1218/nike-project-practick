@@ -10,7 +10,6 @@ const Edit = () => {
   const { id } = useParams();
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-  const [gender, setGender] = useState("");
 
   useEffect(() => {
     editProduct(id);
@@ -21,7 +20,6 @@ const Edit = () => {
     if (newProducts) {
       setName(newProducts.name);
       setPrice(newProducts.price);
-      setGender(newProducts.gender);
     }
   }, [newProducts]);
 
@@ -29,12 +27,11 @@ const Edit = () => {
     let editObj = {
       name,
       price,
-      gender,
     };
     updateProduct(id, editObj);
     navigate("/all-product");
   }
-  return (
+  return newProducts ? (
     <div className="container">
       <div className="edit-block">
         <input
@@ -49,17 +46,14 @@ const Edit = () => {
           onChange={e => setPrice(e.target.value)}
           variant="outlined"
         />
-        <input
-          className="edit-inp"
-          value={gender}
-          onChange={e => setGender(e.target.value)}
-          variant="outlined"
-        />
+
         <button className="edit-btn" variant="contained" onClick={handleSave}>
           Save
         </button>
       </div>
     </div>
+  ) : (
+    <h1>Loadng</h1>
   );
 };
 
