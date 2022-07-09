@@ -46,8 +46,7 @@ const Edit = () => {
           onChange={e => setPrice(e.target.value)}
           variant="outlined"
         />
-
-        <button className="edit-btn" variant="contained" onClick={handleSave}>
+        <button className="edit-btn" onClick={handleSave}>
           Save
         </button>
       </div>
