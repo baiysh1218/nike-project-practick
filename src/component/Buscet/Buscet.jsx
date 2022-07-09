@@ -25,7 +25,7 @@ export default function Cart() {
   }, []);
   console.log(cart);
   return cart ? (
-    <Container className="Buscet-block">
+    <Container className="buscet-block">
       <TableContainer component={Paper}>
         <Table
           sx={{ minWidth: 650 }}
@@ -43,6 +43,7 @@ export default function Cart() {
           <TableBody>
             {cart.products.map(row => (
               <TableRow
+                className="cart-table-row"
                 key={row.item.id}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                 <TableCell component="th" scope="row">

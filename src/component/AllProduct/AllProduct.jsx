@@ -54,14 +54,14 @@ const AllProduct = () => {
                 setPrice(value);
               }}
               min={1}
-              max={100000}
-              step={1000}
+              max={1000}
+              step={100}
               valueLabelDisplay="auto"
               // getAriaValueText={valuetext}
             />
           </div>
         </div>
-        <div className="all-poduct-wrap">
+        <div className="cart-block-section">
           {products.map(item => (
             <Cart key={item.id} item={item} />
           ))}

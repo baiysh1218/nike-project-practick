@@ -6,9 +6,10 @@
 .section-card {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
+  align-items: center;
   margin: 1%;
-  width: 397px;
+  width: 353px;
   height: 500px;
   border: 1px solid black;
   /* background-image: linear-gradient(
@@ -25,7 +26,7 @@
   font-size: 20px;
   color: black;
   font-weight: 700;
-  padding: 1% 0;
+  /* padding: 1% 0; */
 }
 .section-circles {
   width: 90px;
