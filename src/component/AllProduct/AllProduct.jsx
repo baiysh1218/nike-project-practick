@@ -54,8 +54,8 @@ const AllProduct = () => {
                 setPrice(value);
               }}
               min={1}
-              max={1000}
-              step={100}
+              max={500}
+              step={10}
               valueLabelDisplay="auto"
               // getAriaValueText={valuetext}
             />

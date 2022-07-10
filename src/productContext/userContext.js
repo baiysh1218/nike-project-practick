@@ -28,6 +28,11 @@ const UserContextProvaider = ({ children }) => {
     getLogIn();
   }
 
+  async function deleteProduct(id) {
+    await axios.delete(`${LOG_API}/${id}`);
+    getLogIn();
+  }
+
   async function getLogIn() {
     const res = await axios(LOG_API);
     dispatch({
@@ -43,6 +48,7 @@ const UserContextProvaider = ({ children }) => {
         user: state.user,
         createLogIn,
         getLogIn,
+        deleteProduct,
       }}>
       {children}
     </userContext.Provider>

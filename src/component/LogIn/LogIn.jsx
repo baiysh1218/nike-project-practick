@@ -49,8 +49,8 @@ const LogIn = () => {
         />
         <input
           className="inp-admin"
-          type="number"
-          placeholder="+996777777777"
+          type="text"
+          placeholder="comments"
           value={number}
           onChange={e => setNumber(e.target.value)}
         />
