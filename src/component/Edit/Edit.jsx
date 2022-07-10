@@ -43,7 +43,7 @@ const Edit = () => {
         <input
           className="edit-inp"
           value={price}
-          onChange={e => setPrice(e.target.value)}
+          onChange={e => setPrice(+e.target.value)}
           variant="outlined"
         />
         <button className="edit-btn" onClick={handleSave}>
