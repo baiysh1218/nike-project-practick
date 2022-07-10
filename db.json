@@ -2,30 +2,12 @@
   "product": [
     {
       "name": "Nike Air Force 1 '07",
-      "price": 150,
+      "price": 135,
       "description": "Le charme continue d'opérer avec la Nike Air Force 1 '07. Cette silhouette emblématique du basketball apporte un nouveau souffle à ses éléments les plus remarquables : le cuir impeccable, les couleurs vives et juste ce qu'il faut d'éclat pour vous faire briller.",
       "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f094af40-f82f-4fb9-a246-e031bf6fc411/chaussure-air-force-1-07-pour-Dz225W.png",
       "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4906dd0a-96d2-46d3-b70c-cd7c0227deef/chaussure-air-force-1-07-pour-Dz225W.png",
       "delivery": "2",
       "id": 2
-    },
-    {
-      "name": "Nike Blazer Mid '77 Vintage",
-      "price": 140,
-      "description": "Dans les années 70, Nike n'en était encore qu'à ses débuts. À l'époque, nous n'avions pas encore percé dans l'univers du basketball et nous expérimentions nos prototypes sur les joueurs de notre équipe locale. Bien sûr, le modèle s’est amélioré au fil des années, mais le nom est resté. La Nike Blazer Mid '77 Vintage : classique depuis ses tout débuts.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/fb7eda3c-5ac8-4d05-a18f-1c2c5e82e36e/chaussure-blazer-mid-77-vintage-pour-CBDjT0.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/8bc7d689-de2c-4b49-986c-b42153895bc0/chaussure-blazer-mid-77-vintage-pour-CBDjT0.png",
-      "delivery": "2",
-      "id": 3
-    },
-    {
-      "name": "Nike Dunk High",
-      "price": 110,
-      "description": "La Nike Dunk High rappelle le look All-Star des années 1980. Cette chaussure montante classique est repensée spécialement pour les enfants. Avec une conception ultra-durable et des couleurs identiques au modèle original, elle réveillera toutes les stars du basketball en sommeil.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/38f6c6c4-e982-408c-9802-75b1cebee467/chaussure-dunk-high-pour-plus-age-JfWkHc.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/73bd0201-b2a1-4889-9d05-93b194b46bce/chaussure-dunk-high-pour-plus-age-JfWkHc.png",
-      "delivery": "2",
-      "id": 4
     },
     {
       "name": "Nike Air Force 1 '07",
@@ -55,15 +37,6 @@
       "id": 7
     },
     {
-      "name": "Air Jordan 1 Retro High OG",
-      "price": 230,
-      "description": "Emblématique mais toujours tendance, la célèbre Air Jordan 1 a été revisitée pour les fans de sneakers d'aujourd’hui. Cette version Retro High OG est réalisée en cuir premium, avec un amorti confortable et des détails classiques.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/b093663e-817f-44d0-8cd3-5d53905c1a62/chaussure-air-jordan-1-retro-high-og-DRDX5L.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/c5250e9d-f49f-4602-a364-85bf2af50946/chaussure-air-jordan-1-retro-high-og-DRDX5L.png",
-      "delivery": "2",
-      "id": 8
-    },
-    {
       "name": "Air Jordan 1 Low",
       "price": 140,
       "description": "Inspirée du modèle d'origine lancé en 1985, la Air Jordan 1 Low affiche un look classique et épuré, à la fois familier et très actuel. Avec son design emblématique qui s'associe à toutes vos tenues, cette sneaker vous permet de rester au top en toutes circonstances.",
@@ -71,15 +44,6 @@
       "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/a880672d-a210-4f31-a229-0f01dbfbe898/chaussure-air-jordan-1-low-pour-v2kdOZ.png",
       "delivery": "2",
       "id": 9
-    },
-    {
-      "name": "Nike Dunk High",
-      "price": 110,
-      "description": "La Nike Dunk High rappelle le look All-Star des années 1980. Cette chaussure montante classique est repensée spécialement pour les enfants. Avec une conception ultra-durable et des couleurs identiques au modèle original, elle réveillera toutes les stars du basketball en sommeil.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/38f6c6c4-e982-408c-9802-75b1cebee467/chaussure-dunk-high-pour-plus-age-JfWkHc.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/01503113-85e6-4925-9e6a-292e103d7fa5/chaussure-dunk-high-pour-plus-age-JfWkHc.png",
-      "delivery": "2",
-      "id": 10
     },
     {
       "name": "Nike Dunk Low SE",
@@ -107,6 +71,15 @@
       "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/0516a264-9e20-46be-b12c-ace412f6e699/chaussure-de-basketball-kyrie-low-5-community-jewell-loyd-3xnwNM.png",
       "delivery": "2",
       "id": 13
+    },
+    {
+      "name": "Nike Air Zoom Alphafly NEXT% 2",
+      "price": 365,
+      "description": "Après avoir fait quelques pas dans la Nike Air Zoom Alphafly NEXT% 2, vous ne regarderez plus jamais vos anciennes chaussures de course préférées de la même façon. Ce modèle phénoménal a été conçu pour la course et le quotidien, afin d'améliorer vos records personnels sans compromettre les qualités indispensables pour tenir la distance. Le système de maintien épais et léger allie confort et vitesse pour vous permettre de rester au top tout au long de votre run. Profitez du meilleur retour d'énergie de toutes nos chaussures de course pour pulvériser vos records personnels et prendre une longueur d'avance sur vos adversaires.",
+      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/48218cfd-b69e-4f63-9f24-7dc0ce1b6f60/chaussure-de-course-sur-route-air-zoom-alphafly-next-2-pour-CZ72Qc.png",
+      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/da8e38cd-bf3e-4cd1-b4e5-3bb015835776/chaussure-de-course-sur-route-air-zoom-alphafly-next-2-pour-CZ72Qc.png",
+      "delivery": "5",
+      "id": 14
     }
   ]
 }

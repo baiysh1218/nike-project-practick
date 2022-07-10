@@ -9,6 +9,8 @@ import { Badge, Container, IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { cartContext } from "../../productContext/cartContext";
 
+import ChatIcon from "@mui/icons-material/Chat";
+
 const Navbar = () => {
   const navigate = useNavigate();
 
@@ -47,8 +49,8 @@ const Navbar = () => {
               />
             </Badge>
           </IconButton>
-          <IconButton onClick={() => navigate("/log-in")}>
-            <PersonIcon className="navbar-search-icon" />
+          <IconButton onClick={() => navigate("/profile")}>
+            <ChatIcon className="navbar-search-icon" />
           </IconButton>
         </div>
       </div>

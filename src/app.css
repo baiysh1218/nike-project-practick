@@ -225,6 +225,7 @@ body {
   align-items: center;
   text-align: center;
   flex-direction: column;
+  width: 40%;
 }
 .profile-p {
   color: white;
@@ -232,7 +233,7 @@ body {
 .profile-content-block {
   background-color: rgba(0, 27, 87, 0.288);
   border-radius: 20px;
-  padding: 10% 0;
+  padding: 5% 0;
 }
 .cart-img-width {
   width: 60%;
@@ -445,7 +446,21 @@ body {
   width: 15%;
   margin-left: 10%;
 }
-
+.fdf {
+  color: white;
+  font-size: 30px;
+}
+.btn-comments {
+  width: 20%;
+  margin-bottom: 5%;
+}
+.comments-block {
+  display: flex;
+  justify-content: center;
+}
+.container-profile {
+  max-width: 1332px;
+}
 @media all and (max-width: 1350px) {
   .main-nike-str {
     width: 80%;
@@ -503,6 +518,12 @@ body {
   }
   .navbar-content-text {
     font-size: 16px;
+  }
+  .container {
+    width: 600px;
+  }
+  .profile-content-block {
+    width: 40%;
   }
 }
 @media all and (max-width: 680px) {
@@ -644,7 +665,7 @@ body {
 }
 @media all and (max-width: 450px) {
   .profile-content-block {
-    width: 220px;
+    width: 40%;
   }
   .profile-h3 {
     font-size: 20px;
@@ -658,7 +679,7 @@ body {
 }
 @media all and (max-width: 1375px) {
   .profile-content-block {
-    width: 720px;
+    width: 40%;
   }
   .container {
     width: 1270px;
@@ -670,6 +691,17 @@ body {
   }
   .btn-cart {
     margin-top: 40%;
+  }
+  .btn-comments {
+    font-size: 10px;
+    margin: 5% 0;
+    width: 30%;
+  }
+  .navbar-content-text {
+    font-size: 8px;
+  }
+  .fdf {
+    font-size: 16px;
   }
 }
 .footer-background {
@@ -747,6 +779,18 @@ body {
   }
   .navbar {
     margin-top: 10%;
+  }
+  .navbar-content-text {
+    font-size: 5px;
+  }
+  .navbar-search-icon {
+    width: 5%;
+  }
+  .footer-content-h4 {
+    font-size: 6px;
+  }
+  .footer-content-p {
+    font-size: 5px;
   }
 }
 @media all and (max-width: 700px) {
