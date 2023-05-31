@@ -26,6 +26,14 @@ export default function Cart() {
   console.log(cart);
   return cart ? (
     <Container className="buscet-block">
+      <Box>
+        <Typography className="total-price" variant="h4">
+          Total price: {cart.totalPrice} $
+        </Typography>
+        <button onClick={() => navigate("/order")} className="btn-admin btn-by">
+          by now
+        </button>
+      </Box>
       <TableContainer component={Paper}>
         <Table
           sx={{ minWidth: 650 }}
@@ -78,14 +86,6 @@ export default function Cart() {
           </TableBody>
         </Table>
       </TableContainer>
-      <Box>
-        <Typography className="total-price" variant="h4">
-          Total price: {cart.totalPrice} $
-        </Typography>
-        <button onClick={() => navigate("/order")} className="btn-admin btn-by">
-          by now
-        </button>
-      </Box>
     </Container>
   ) : (
     <h1>Loadig...</h1>

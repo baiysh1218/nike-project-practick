@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useReducer } from "react";
+import React, { useReducer, useRef } from "react";
 import { useParams } from "react-router-dom";
 
 export const productsContext = React.createContext();
@@ -9,6 +9,7 @@ const INIT_STATE = {
   pages: 0,
   newProducts: null,
 };
+
 function reducer(state = INIT_STATE, action) {
   switch (action.type) {
     case "GET_PRODUCTS":
@@ -17,17 +18,15 @@ function reducer(state = INIT_STATE, action) {
         products: action.payload.data,
         pages: Math.ceil(action.payload.headers["x-total-count"] / 6),
       };
-
     case "EDIT_PRODUCT":
       return { ...state, newProducts: action.payload };
     default:
       return state;
   }
 }
-const API = "http://localhost:8002/product";
+const API = "http://localhost:8000/product";
 const ProductsContextProvaider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
-  let params = useParams();
 
   async function createProduct(newProduct) {
     await axios.post(API, newProduct);
@@ -59,6 +58,7 @@ const ProductsContextProvaider = ({ children }) => {
     await axios.patch(`${API}/${id}`, editObj);
     getProducts();
   }
+  console.log(state.products);
 
   return (
     <productsContext.Provider

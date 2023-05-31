@@ -803,3 +803,6 @@ body {
     min-width: 320px;
   }
 }
+.color {
+  color: white;
+}

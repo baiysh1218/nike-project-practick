@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { productsContext } from "../../productContext/productContext";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import { cartContext } from "../../productContext/cartContext";
+import { useRef } from "react";
 
 const Cart = ({ item }) => {
   const { deleteProduct } = useContext(productsContext);

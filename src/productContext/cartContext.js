@@ -62,6 +62,7 @@ const CartContextProvider = ({ children }) => {
     cart.totalPrice = cart.products.reduce((prev, curr) => {
       return prev + curr.subPrice;
     }, 0);
+
     // prev + curr => 0 + curr.subPrice = 1000;
     // prev + curr => 1000 + curr.subPrice => 2000
     // prev + curr => 2000 + curr.subPrice => 3000
