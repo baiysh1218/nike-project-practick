@@ -19,7 +19,7 @@ function reducer(state = INIT_STATE, action) {
   }
 }
 
-const LOG_API = "http://localhost:8003/log";
+const LOG_API = "http://localhost:8001/log";
 const UserContextProvaider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 

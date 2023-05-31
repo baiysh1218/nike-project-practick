@@ -1,5 +1,5 @@
 import { Pagination, Slider, TextField } from "@mui/material";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { productsContext } from "../../productContext/productContext";
@@ -9,31 +9,33 @@ import Section from "../Section/Section";
 
 const AllProduct = () => {
   const { getProducts, products, pages } = useContext(productsContext);
+
   const [searchParams, setSearchParams] = useSearchParams();
+
+  console.log(searchParams);
+
+  const [price, setPrice] = useState([1, 10000]);
+
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
   );
 
   const [currentPage, setCurrentPage] = useState(
-    searchParams.get("_page") ? +searchParams.get("_page") : 1
+    searchParams.get("page") ? +searchParams.get("page") : 1
   );
-
-  const [price, setPrice] = useState([1, 100000]);
 
   useEffect(() => {
     setSearchParams({
       q: search,
       _page: currentPage,
-      _limit: 6,
-      price_gte: price[0],
-      price_lte: price[1],
+      price_from: price[0],
+      price_to: price[1],
     });
   }, [search, currentPage, price]);
 
   useEffect(() => {
     getProducts();
   }, [searchParams]);
-  console.log(products);
   return (
     <>
       <div className="container">
@@ -50,14 +52,12 @@ const AllProduct = () => {
               getAriaLabel={() => "Temperature range"}
               value={price}
               onChange={(e, value) => {
-                console.log(value);
                 setPrice(value);
               }}
               min={1}
               max={500}
-              step={10}
+              step={11}
               valueLabelDisplay="auto"
-              // getAriaValueText={valuetext}
             />
           </div>
         </div>

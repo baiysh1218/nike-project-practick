@@ -2,16 +2,7 @@
   "product": [
     {
       "name": "Nike Air Force 1 '07",
-      "price": 135,
-      "description": "Le charme continue d'opérer avec la Nike Air Force 1 '07. Cette silhouette emblématique du basketball apporte un nouveau souffle à ses éléments les plus remarquables : le cuir impeccable, les couleurs vives et juste ce qu'il faut d'éclat pour vous faire briller.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/f094af40-f82f-4fb9-a246-e031bf6fc411/chaussure-air-force-1-07-pour-Dz225W.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/4906dd0a-96d2-46d3-b70c-cd7c0227deef/chaussure-air-force-1-07-pour-Dz225W.png",
-      "delivery": "2",
-      "id": 2
-    },
-    {
-      "name": "Nike Air Force 1 '07",
-      "price": 190,
+      "price": 180,
       "description": "Deux fois plus de Swoosh, deux fois plus de plaisir. Cette silhouette emblématique du basketball revisite ses éléments les plus célèbres : les renforts cousus résistants, les finitions sobres et des détails subtils pour vous faire briller. Les deux logos Swoosh sur le côté vous permettent d’afficher votre passion pour la marque.",
       "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/80a0619e-754e-4bee-b601-b0bde5bd203a/chaussures-air-force-1-07-pour-cbBh9R.png",
       "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/7e82feec-9c18-4da1-883c-aa0bae47be77/chaussures-air-force-1-07-pour-cbBh9R.png",
@@ -44,15 +35,6 @@
       "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/a880672d-a210-4f31-a229-0f01dbfbe898/chaussure-air-jordan-1-low-pour-v2kdOZ.png",
       "delivery": "2",
       "id": 9
-    },
-    {
-      "name": "Nike Dunk Low SE",
-      "price": 110,
-      "description": "Affichez votre nostalgie du basket-ball des années 80 avec les chaussures Nike Dunk Low SE. De la conception ultra-résistante au style et à la forme de la chaussure, nous rendons hommage au modèle emblématique Dunk d'origine, désormais adapté au pied de votre enfant.",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/304d6ab6-d6b9-4394-bd1f-4854fd025684/chaussure-dunk-low-se-pour-plus-age-KyTw2eY4.png",
-      "imageTwo": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5,q_80/3694ae86-4abb-435e-b2c9-9840b52ad4ad/chaussure-dunk-low-se-pour-plus-age-KyTw2eY4.png",
-      "delivery": "2",
-      "id": 11
     },
     {
       "name": "Nike Air Force 1 '07",
